@@ -61,6 +61,9 @@ main{position:relative}
 .btn--pill{height:42px;padding:0 20px;font-size:12.5px}
 .btn--pill::after{height:17px}
 
+.ig-ico{width:1.1em;height:1.1em;vertical-align:-.18em;margin-right:.4em;display:inline-block}
+.ig-ico--big{width:.75em;height:.75em;vertical-align:-.06em;margin-right:.25em}
+
 /* ══════════ LOADER ══════════ */
 .loader{position:fixed;inset:0;z-index:100;background:var(--noir);color:var(--cream);display:grid;place-items:center;border-radius:0 0 0 0}
 .loader__inner{text-align:center}
@@ -83,7 +86,7 @@ main{position:relative}
 /* ══════════ NAV ══════════ */
 .nav{position:fixed;top:0;left:0;right:0;z-index:50;display:flex;align-items:center;justify-content:space-between;gap:20px;padding:18px var(--pad);color:#fff;mix-blend-mode:difference}
 .nav__logo{display:block;line-height:0}
-.nav__logo-img{height:56px;width:auto;display:block}
+.nav__logo-img{height:86px;width:auto;display:block}
 .nav__logo-crown{font-size:14px;margin-bottom:2px}
 .nav__logo-word{font-family:var(--serif);font-size:26px;letter-spacing:.06em;text-transform:uppercase}
 .nav__logo-sub{font-size:8px;letter-spacing:.3em;text-transform:uppercase;opacity:.8;margin-top:3px}
@@ -284,7 +287,7 @@ body.menu-open .nav__burger i:last-child{top:15px;transform:rotate(-45deg)}
 .marquee{overflow:hidden;white-space:nowrap}
 .marquee__row{display:inline-flex;will-change:transform}
 .footer__row{display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap;font-size:12px;letter-spacing:.08em;opacity:.6;margin-top:24px}
-.footer__logo{height:70px;width:auto;display:block;margin-bottom:14px}
+.footer__logo{height:130px;width:auto;display:block;margin-bottom:16px}
 
 /* ══════════ RESPONSIVE ══════════ */
 @media (min-width:761px){

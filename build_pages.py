@@ -58,7 +58,7 @@ FOOTER = f'''<footer class="footer footer--page">
   <div class="footer__cols">
     <div><b>La Pâtisserie Des Douceurs</b><br>7 rue des Ramacles<br>63170 Aubière</div>
     <div>Mar – Ven · 9 h – 12 h 30 &amp; 15 h – 18 h 30<br>Sam · 9 h – 13 h 30 · Dim · 9 h – 12 h 30<br>Fermé le lundi</div>
-    <div><a href="{TEL}">06 68 93 24 19</a><br><a href="mailto:{MAIL}">{MAIL}</a><br><a href="{IG}" target="_blank" rel="noopener">Instagram</a> · <a href="{FB}" target="_blank" rel="noopener">Facebook</a></div>
+    <div><a href="{TEL}">06 68 93 24 19</a><br><a href="mailto:{MAIL}">{MAIL}</a><br><a href="{IG}" target="_blank" rel="noopener"><svg class="ig-ico" viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="2.5" y="2.5" width="19" height="19" rx="5.5" stroke="currentColor" stroke-width="1.8"/><circle cx="12" cy="12" r="4.2" stroke="currentColor" stroke-width="1.8"/><circle cx="17.4" cy="6.6" r="1.4" fill="currentColor"/></svg>Instagram</a> · <a href="{FB}" target="_blank" rel="noopener">Facebook</a></div>
     <div><a href="index.html">Accueil</a><br><a href="carte.html">La carte</a><br><a href="mariages.html">Mariages &amp; événements</a><br><a href="saisons.html">Saisons</a><br><a href="a-propos.html">La maison</a><br><a href="contact.html">Contact</a></div>
   </div>
   <div class="footer__row">
@@ -303,7 +303,7 @@ def saisons():
 <div class="stack">{panels}</div>
 <section class="ig-band">
   <p class="eyebrow" data-reveal>La vitrine, chaque semaine</p>
-  <a class="ig-band__handle" href="{IG}" target="_blank" rel="noopener" data-letters data-cursor="Ouvrir">@lapatisseriedesdouceurs</a>
+  <a class="ig-band__handle" href="{IG}" target="_blank" rel="noopener" data-cursor="Ouvrir"><svg class="ig-ico ig-ico--big" viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="2.5" y="2.5" width="19" height="19" rx="5.5" stroke="currentColor" stroke-width="1.8"/><circle cx="12" cy="12" r="4.2" stroke="currentColor" stroke-width="1.8"/><circle cx="17.4" cy="6.6" r="1.4" fill="currentColor"/></svg>@lapatisseriedesdouceurs</a>
   <div class="marquee ig-band__row" aria-hidden="true"><div class="marquee__row" data-marquee><span class="ig-band__set">{ig}</span><span class="ig-band__set">{ig}</span></div></div>
 </section>
 </main>''' + FOOTER + tail())
@@ -439,7 +439,7 @@ def contact():
   <p class="eyebrow" data-reveal>Commandes &amp; questions</p>
   <a class="tel-hero__num" href="{TEL}" data-letters data-cursor="Appeler">06 68 93 24 19</a>
   <p class="tel-hero__now" id="openNow" data-reveal></p>
-  <div class="tel-hero__alt" data-reveal><a href="mailto:{MAIL}">{MAIL}</a> · <a href="{IG}" target="_blank" rel="noopener">Instagram</a> · <a href="{FB}" target="_blank" rel="noopener">Facebook</a></div>
+  <div class="tel-hero__alt" data-reveal><a href="mailto:{MAIL}">{MAIL}</a> · <a href="{IG}" target="_blank" rel="noopener"><svg class="ig-ico" viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="2.5" y="2.5" width="19" height="19" rx="5.5" stroke="currentColor" stroke-width="1.8"/><circle cx="12" cy="12" r="4.2" stroke="currentColor" stroke-width="1.8"/><circle cx="17.4" cy="6.6" r="1.4" fill="currentColor"/></svg>Instagram</a> · <a href="{FB}" target="_blank" rel="noopener">Facebook</a></div>
 </section>
 
 <section class="hours">

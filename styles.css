@@ -51,6 +51,25 @@ main{position:relative}
 .wd{display:inline-block;white-space:nowrap}
 .ch{display:inline-block;will-change:transform;backface-visibility:hidden}
 
+/* — boutons « liquid glass » (verre limpide, liseré dégradé estompé) — */
+.btn{position:relative;display:inline-flex;align-items:center;justify-content:center;gap:.55em;height:54px;padding:0 28px;border-radius:999px;font-size:12px;font-weight:600;letter-spacing:.16em;text-transform:uppercase;white-space:nowrap;isolation:isolate;color:#fff;border:none;background:rgba(255,255,255,.01);background-blend-mode:luminosity;backdrop-filter:blur(50px);-webkit-backdrop-filter:blur(50px);box-shadow:4px 4px 4px rgba(0,0,0,.05),inset 0 1px 1px rgba(255,255,255,.15);transition:background .35s,color .35s;will-change:transform}
+.btn::before{content:"";position:absolute;inset:0;border-radius:inherit;padding:1.4px;background:linear-gradient(180deg,rgba(255,255,255,.5) 0%,rgba(255,255,255,.2) 20%,rgba(255,255,255,0) 40%,rgba(255,255,255,0) 60%,rgba(255,255,255,.2) 80%,rgba(255,255,255,.5) 100%);-webkit-mask:linear-gradient(#fff 0 0) content-box,linear-gradient(#fff 0 0);-webkit-mask-composite:xor;mask-composite:exclude;pointer-events:none}
+.btn::after{content:"↗";font-size:1.25em;line-height:1;font-weight:400;transition:transform .4s var(--ease)}
+.btn:hover{background:rgba(255,255,255,.1)}
+.btn:hover::after{transform:translate(2px,-2px)}
+/* variante pleine (secondaire) : blanc, texte noir */
+.btn--light{background:#fff;color:var(--noir);background-blend-mode:normal;backdrop-filter:none;-webkit-backdrop-filter:none;box-shadow:0 12px 34px -10px rgba(0,0,0,.35)}
+.btn--light::before{display:none}
+.btn--light:hover{background:rgba(255,255,255,.88)}
+/* verre teinté sombre : pour les sections claires */
+.btn--noir{background:rgba(18,10,13,.82);background-blend-mode:normal;color:var(--cream)}
+.btn--noir:hover{background:rgba(18,10,13,.68)}
+.btn--pill{height:42px;padding:0 20px;font-size:10px}
+
+/* lettres découpées */
+.wd{display:inline-block;white-space:nowrap}
+.ch{display:inline-block;will-change:transform;backface-visibility:hidden}
+
 /* — boutons « liquid glass » — */
 .btn{position:relative;display:inline-flex;align-items:center;justify-content:center;gap:.6em;height:54px;padding:0 30px;border-radius:999px;font-size:12px;font-weight:600;letter-spacing:.16em;text-transform:uppercase;white-space:nowrap;overflow:hidden;isolation:isolate;color:var(--cream);border:1px solid rgba(255,255,255,.26);background:linear-gradient(115deg,rgba(255,255,255,.16),rgba(255,255,255,.03) 35%,rgba(255,255,255,0) 60%),radial-gradient(120% 150% at 12% 135%,rgba(196,54,79,.38),transparent 60%),radial-gradient(140% 190% at 90% 0%,rgba(124,92,255,.34),transparent 55%),rgba(24,13,17,.5);backdrop-filter:blur(16px) saturate(1.6);-webkit-backdrop-filter:blur(16px) saturate(1.6);box-shadow:inset 0 1px 0 rgba(255,255,255,.45),inset 0 -8px 18px -10px rgba(228,140,157,.42),inset 12px 0 22px -14px rgba(110,150,255,.4),0 20px 44px -16px rgba(196,54,79,.45),0 3px 10px rgba(0,0,0,.35);transition:box-shadow .5s var(--ease),filter .4s;will-change:transform}
 .btn::before{content:"";position:absolute;left:12%;right:12%;top:2px;height:30%;border-radius:999px;background:linear-gradient(rgba(255,255,255,.18),rgba(255,255,255,0));filter:blur(2px);pointer-events:none}

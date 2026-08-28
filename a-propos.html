@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>La maison — Yohann Girard, pâtissier chocolatier à Aubière</title>
+<meta name="description" content="Yohann Girard a ouvert La Pâtisserie Des Douceurs à Aubière en 2017 : pâtisserie générale, chocolats fins, glaces artisanales, pain au levain — tout est fait à l’atelier.">
+<meta property="og:title" content="La maison — Yohann Girard, pâtissier chocolatier à Aubière">
+<meta property="og:description" content="Yohann Girard a ouvert La Pâtisserie Des Douceurs à Aubière en 2017 : pâtisserie générale, chocolats fins, glaces artisanales, pain au levain — tout est fait à l’atelier.">
+<meta property="og:image" content="img/hero.webp">
+<meta property="og:locale" content="fr_FR">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23120A0D'/%3E%3Ccircle cx='16' cy='17' r='8' fill='%23E48C9D'/%3E%3Ccircle cx='13' cy='13' r='2.2' fill='%23C4364F'/%3E%3Ccircle cx='19' cy='13' r='2.2' fill='%23C4364F'/%3E%3Ccircle cx='16' cy='10' r='2.2' fill='%23C4364F'/%3E%3C/svg%3E">
+<link rel="preload" href="fonts/urbanist-latin-800-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/inter-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="vendor/lenis.css">
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="pages.css">
+</head>
+<body class="sub p-maison">
+
+<div class="grain" aria-hidden="true"></div>
+<div class="cursor" aria-hidden="true"><span class="cursor__dot"></span><span class="cursor__ring"><span class="cursor__label"></span></span></div>
+<header class="nav" id="nav">
+  <button class="nav__burger" id="burger" aria-label="Menu"><i></i><i></i></button>
+  <a class="nav__logo" href="index.html">
+    <span class="nav__logo-crown">♛</span>
+    <span class="nav__logo-word">Douceurs</span>
+    <span class="nav__logo-sub">Pâtisserie · Aubière</span>
+  </a>
+  <nav class="nav__links"><a href="carte.html">La carte</a><a href="mariages.html">Mariages</a><a href="saisons.html">Saisons</a><a href="a-propos.html" aria-current=page>La maison</a><a href="contact.html">Contact</a></nav>
+  <a class="btn btn--pill" href="tel:+33668932419" data-cursor="Appeler" data-magnet>06 68 93 24 19</a>
+</header>
+<div class="menu" id="menu">
+  <a href="index.html">Accueil</a><a href="carte.html">La carte</a><a href="mariages.html">Mariages</a><a href="saisons.html">Saisons</a><a href="a-propos.html" aria-current=page>La maison</a><a href="contact.html">Contact</a>
+</div>
+<main id="top">
+<section class="portrait-hero">
+  <div class="portrait-hero__text">
+    <p class="eyebrow" data-reveal>La maison</p>
+    <h1 class="portrait-hero__title" data-letters>Un artisan, un atelier</h1>
+    <p class="portrait-hero__lead" data-reveal>Yohann Girard — pâtissier, chocolatier, glacier et boulanger. Installé au 7 rue des Ramacles depuis novembre 2017.</p>
+    <div class="facts" data-reveal>
+      <div class="fact"><b><span data-count="2017">0</span></b><span class="fact__label">Novembre 2017 · ouverture rue des Ramacles</span></div>
+      <div class="fact"><b><span class="fact__note">4,9</span><i>/5</i></b><span class="fact__stars" aria-label="4,9 sur 5">★★★★★</span><span class="fact__label">Une cinquantaine d’avis Google</span></div>
+      <div class="fact"><b><span data-count="4">0</span></b><span class="fact__tags"><i>Pâtissier</i><i>Chocolatier</i><i>Glacier</i><i>Boulanger</i></span></div>
+    </div>
+  </div>
+  <figure class="portrait-hero__fig tilt" data-tilt data-reveal-clip>
+    <div class="tilt__inner"><img src="img/maison-hero.webp" alt="La vitrine de la boutique, rue des Ramacles" data-parallax-img></div>
+    <span class="portrait-hero__stamp" data-speed="-0.4">Fait<br>maison</span>
+  </figure>
+</section>
+
+<section class="quote">
+  <p class="quote__mark" aria-hidden="true">«</p>
+  <p class="quote__text" data-scrub-words>Une pâtisserie générale au sens plein : entremets, tartes, gâteaux d’anniversaire et pièces montées sur commande, chocolats fins, glaces artisanales, confiseries — et le pain, au levain et en tradition, avec des farines soigneusement sélectionnées. Pas de sous-traitance : ce qui est en vitrine a été fait ici, par lui.</p>
+</section>
+
+<section class="day" id="journee">
+  <div class="day__pin">
+    <div class="day__clock" aria-hidden="true">
+      <span class="day__halo"></span>
+      <span class="day__glow" id="clockGlow"></span>
+      <span class="day__disc">
+        <span class="day__ticks" id="clockTicks"></span>
+        <i class="day__hand" id="clockHand"><b></b></i>
+        <span class="day__time" id="clockTime">4 h 30</span>
+      </span>
+    </div>
+    <div class="day__text">
+      <p class="eyebrow">Une journée à l’atelier</p>
+      <div class="day__moments"><div class="day__moment" data-moment="0"><b>4 h 30</b><h3>Le four</h3><p>Les baguettes de tradition et les pains au levain partent en premier. La pièce est encore fraîche.</p></div><div class="day__moment" data-moment="1"><b>6 h</b><h3>Les entremets</h3><p>Montage à la poche, repos au froid, glaçage velours. Ce qui a été fait la veille sort de cellule.</p></div><div class="day__moment" data-moment="2"><b>9 h</b><h3>La boutique ouvre</h3><p>Vitrine dressée. Les premières commandes du jour se retirent — parfois passées la veille.</p></div><div class="day__moment" data-moment="3"><b>12 h 30</b><h3>Pause</h3><p>Fermeture jusqu’à 15 h. Le temps de couler le chocolat, de turbiner les glaces en été.</p></div><div class="day__moment" data-moment="4"><b>15 h</b><h3>Réouverture</h3><p>Jusqu’à 18 h 30. On prend les commandes de la semaine, on parle pièces montées.</p></div></div>
+      <div class="day__dots" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></div>
+    </div>
+  </div>
+</section>
+
+<section class="trev">
+  <p class="trev__eyebrow" data-reveal>Témoignages</p>
+  <h2 class="trev__title" data-reveal>Des clients <span>conquis</span></h2>
+  <div class="trev__grid">
+    <article class="trev__card" data-reveal>
+      <header><svg class="trev__g" viewBox="0 0 24 24" width="20" height="20" aria-label="Google"><path fill="#4285F4" d="M23.5 12.3c0-.9-.1-1.5-.3-2.2H12v4.1h6.5c-.1 1.1-.8 2.7-2.4 3.8l3.7 2.9c2.2-2.1 3.7-5.1 3.7-8.6z"/><path fill="#34A853" d="M12 24c3.2 0 6-1.1 7.9-2.9l-3.7-2.9c-1 .7-2.4 1.2-4.2 1.2-3.2 0-6-2.2-6.9-5.2L1.3 17.1C3.3 21.2 7.3 24 12 24z"/><path fill="#FBBC05" d="M5.1 14.2c-.3-.7-.4-1.4-.4-2.2s.1-1.5.4-2.2L1.3 6.9C.5 8.5 0 10.2 0 12s.5 3.5 1.3 5.1l3.8-2.9z"/><path fill="#EA4335" d="M12 4.6c2.3 0 3.8 1 4.7 1.8l3.3-3.2C18 1.2 15.2 0 12 0 7.3 0 3.3 2.8 1.3 6.9l3.8 2.9c.9-3 3.7-5.2 6.9-5.2z"/></svg><span class="trev__score">5,0 <i>★</i></span></header>
+      <p class="trev__quote">« Vraiment superbe pâtisserie. Tout est bon : le chocolat maison, la guimauve… et les gâteaux. Hmmm, le tiramisu ! Très bien servi par le chef. »</p>
+      <footer><b>A</b><div><strong>Aminou</strong><span>Tiramisu, chocolat maison · il y a 8 mois</span></div></footer>
+    </article>
+    <article class="trev__card" data-reveal>
+      <header><svg class="trev__g" viewBox="0 0 24 24" width="20" height="20" aria-label="Google"><path fill="#4285F4" d="M23.5 12.3c0-.9-.1-1.5-.3-2.2H12v4.1h6.5c-.1 1.1-.8 2.7-2.4 3.8l3.7 2.9c2.2-2.1 3.7-5.1 3.7-8.6z"/><path fill="#34A853" d="M12 24c3.2 0 6-1.1 7.9-2.9l-3.7-2.9c-1 .7-2.4 1.2-4.2 1.2-3.2 0-6-2.2-6.9-5.2L1.3 17.1C3.3 21.2 7.3 24 12 24z"/><path fill="#FBBC05" d="M5.1 14.2c-.3-.7-.4-1.4-.4-2.2s.1-1.5.4-2.2L1.3 6.9C.5 8.5 0 10.2 0 12s.5 3.5 1.3 5.1l3.8-2.9z"/><path fill="#EA4335" d="M12 4.6c2.3 0 3.8 1 4.7 1.8l3.3-3.2C18 1.2 15.2 0 12 0 7.3 0 3.3 2.8 1.3 6.9l3.8 2.9c.9-3 3.7-5.2 6.9-5.2z"/></svg><span class="trev__score">5,0 <i>★</i></span></header>
+      <p class="trev__quote">« Gâteau d'anniversaire commandé à peine 24 h avant, et qui était excellent et magnifique ! Je recommande fortement. »</p>
+      <footer><b>CC</b><div><strong>Charlotte C.</strong><span>Commande en 24 h · il y a 2 ans</span></div></footer>
+    </article>
+    <article class="trev__card" data-reveal>
+      <header><svg class="trev__g" viewBox="0 0 24 24" width="20" height="20" aria-label="Google"><path fill="#4285F4" d="M23.5 12.3c0-.9-.1-1.5-.3-2.2H12v4.1h6.5c-.1 1.1-.8 2.7-2.4 3.8l3.7 2.9c2.2-2.1 3.7-5.1 3.7-8.6z"/><path fill="#34A853" d="M12 24c3.2 0 6-1.1 7.9-2.9l-3.7-2.9c-1 .7-2.4 1.2-4.2 1.2-3.2 0-6-2.2-6.9-5.2L1.3 17.1C3.3 21.2 7.3 24 12 24z"/><path fill="#FBBC05" d="M5.1 14.2c-.3-.7-.4-1.4-.4-2.2s.1-1.5.4-2.2L1.3 6.9C.5 8.5 0 10.2 0 12s.5 3.5 1.3 5.1l3.8-2.9z"/><path fill="#EA4335" d="M12 4.6c2.3 0 3.8 1 4.7 1.8l3.3-3.2C18 1.2 15.2 0 12 0 7.3 0 3.3 2.8 1.3 6.9l3.8 2.9c.9-3 3.7-5.2 6.9-5.2z"/></svg><span class="trev__score">5,0 <i>★</i></span></header>
+      <p class="trev__quote">« Les réalisations de ce pâtissier sont les meilleures que j'ai mangées. Desserts parfaitement équilibrés, jamais écœurants. Un sans-faute. »</p>
+      <footer><b>SB</b><div><strong>Sanaa Brm</strong><span>Desserts équilibrés · il y a 1 an</span></div></footer>
+    </article>
+    <article class="trev__card" data-reveal>
+      <header><svg class="trev__g" viewBox="0 0 24 24" width="20" height="20" aria-label="Google"><path fill="#4285F4" d="M23.5 12.3c0-.9-.1-1.5-.3-2.2H12v4.1h6.5c-.1 1.1-.8 2.7-2.4 3.8l3.7 2.9c2.2-2.1 3.7-5.1 3.7-8.6z"/><path fill="#34A853" d="M12 24c3.2 0 6-1.1 7.9-2.9l-3.7-2.9c-1 .7-2.4 1.2-4.2 1.2-3.2 0-6-2.2-6.9-5.2L1.3 17.1C3.3 21.2 7.3 24 12 24z"/><path fill="#FBBC05" d="M5.1 14.2c-.3-.7-.4-1.4-.4-2.2s.1-1.5.4-2.2L1.3 6.9C.5 8.5 0 10.2 0 12s.5 3.5 1.3 5.1l3.8-2.9z"/><path fill="#EA4335" d="M12 4.6c2.3 0 3.8 1 4.7 1.8l3.3-3.2C18 1.2 15.2 0 12 0 7.3 0 3.3 2.8 1.3 6.9l3.8 2.9c.9-3 3.7-5.2 6.9-5.2z"/></svg><span class="trev__score">5,0 <i>★</i></span></header>
+      <p class="trev__quote">« Superbe prestation pour un mariage de 120 convives. Mignardises excellentes, support créé sur mesure. Rapport qualité-prix excellent. »</p>
+      <footer><b>GD</b><div><strong>Guillaume Desgache</strong><span>Mariage, 120 convives · il y a 1 an</span></div></footer>
+    </article>
+    <article class="trev__card" data-reveal>
+      <header><svg class="trev__g" viewBox="0 0 24 24" width="20" height="20" aria-label="Google"><path fill="#4285F4" d="M23.5 12.3c0-.9-.1-1.5-.3-2.2H12v4.1h6.5c-.1 1.1-.8 2.7-2.4 3.8l3.7 2.9c2.2-2.1 3.7-5.1 3.7-8.6z"/><path fill="#34A853" d="M12 24c3.2 0 6-1.1 7.9-2.9l-3.7-2.9c-1 .7-2.4 1.2-4.2 1.2-3.2 0-6-2.2-6.9-5.2L1.3 17.1C3.3 21.2 7.3 24 12 24z"/><path fill="#FBBC05" d="M5.1 14.2c-.3-.7-.4-1.4-.4-2.2s.1-1.5.4-2.2L1.3 6.9C.5 8.5 0 10.2 0 12s.5 3.5 1.3 5.1l3.8-2.9z"/><path fill="#EA4335" d="M12 4.6c2.3 0 3.8 1 4.7 1.8l3.3-3.2C18 1.2 15.2 0 12 0 7.3 0 3.3 2.8 1.3 6.9l3.8 2.9c.9-3 3.7-5.2 6.9-5.2z"/></svg><span class="trev__score">5,0 <i>★</i></span></header>
+      <p class="trev__quote">« 👑 La meilleure galette des rois d'Auvergne. Découverte au marché d'Aubière — la boutique est à quelques pas. »</p>
+      <footer><b>CK</b><div><strong>Clémentine Kaul</strong><span>Galette des rois · il y a 5 ans</span></div></footer>
+    </article>
+    <article class="trev__card" data-reveal>
+      <header><svg class="trev__g" viewBox="0 0 24 24" width="20" height="20" aria-label="Google"><path fill="#4285F4" d="M23.5 12.3c0-.9-.1-1.5-.3-2.2H12v4.1h6.5c-.1 1.1-.8 2.7-2.4 3.8l3.7 2.9c2.2-2.1 3.7-5.1 3.7-8.6z"/><path fill="#34A853" d="M12 24c3.2 0 6-1.1 7.9-2.9l-3.7-2.9c-1 .7-2.4 1.2-4.2 1.2-3.2 0-6-2.2-6.9-5.2L1.3 17.1C3.3 21.2 7.3 24 12 24z"/><path fill="#FBBC05" d="M5.1 14.2c-.3-.7-.4-1.4-.4-2.2s.1-1.5.4-2.2L1.3 6.9C.5 8.5 0 10.2 0 12s.5 3.5 1.3 5.1l3.8-2.9z"/><path fill="#EA4335" d="M12 4.6c2.3 0 3.8 1 4.7 1.8l3.3-3.2C18 1.2 15.2 0 12 0 7.3 0 3.3 2.8 1.3 6.9l3.8 2.9c.9-3 3.7-5.2 6.9-5.2z"/></svg><span class="trev__score">5,0 <i>★</i></span></header>
+      <p class="trev__quote">« Tarte aux myrtilles délicieuse, brioche feuilletée aussi. Une tarte préparée à la dernière minute pour un anniversaire : tout le monde s'est régalé ! »</p>
+      <footer><b>SR</b><div><strong>Steve Rogers</strong><span>Dernière minute, réussie · il y a 4 ans</span></div></footer>
+    </article>
+    <article class="trev__card" data-reveal>
+      <header><svg class="trev__g" viewBox="0 0 24 24" width="20" height="20" aria-label="Google"><path fill="#4285F4" d="M23.5 12.3c0-.9-.1-1.5-.3-2.2H12v4.1h6.5c-.1 1.1-.8 2.7-2.4 3.8l3.7 2.9c2.2-2.1 3.7-5.1 3.7-8.6z"/><path fill="#34A853" d="M12 24c3.2 0 6-1.1 7.9-2.9l-3.7-2.9c-1 .7-2.4 1.2-4.2 1.2-3.2 0-6-2.2-6.9-5.2L1.3 17.1C3.3 21.2 7.3 24 12 24z"/><path fill="#FBBC05" d="M5.1 14.2c-.3-.7-.4-1.4-.4-2.2s.1-1.5.4-2.2L1.3 6.9C.5 8.5 0 10.2 0 12s.5 3.5 1.3 5.1l3.8-2.9z"/><path fill="#EA4335" d="M12 4.6c2.3 0 3.8 1 4.7 1.8l3.3-3.2C18 1.2 15.2 0 12 0 7.3 0 3.3 2.8 1.3 6.9l3.8 2.9c.9-3 3.7-5.2 6.9-5.2z"/></svg><span class="trev__score">5,0 <i>★</i></span></header>
+      <p class="trev__quote">« Excellente tarte aux fruits rouges, myrtilles fraîches et framboises. Demandes spéciales réalisées sans souci. Très bons chocolats. »</p>
+      <footer><b>AL</b><div><strong>Alice</strong><span>Demandes spéciales · il y a 3 ans</span></div></footer>
+    </article>
+    <article class="trev__card" data-reveal>
+      <header><svg class="trev__g" viewBox="0 0 24 24" width="20" height="20" aria-label="Google"><path fill="#4285F4" d="M23.5 12.3c0-.9-.1-1.5-.3-2.2H12v4.1h6.5c-.1 1.1-.8 2.7-2.4 3.8l3.7 2.9c2.2-2.1 3.7-5.1 3.7-8.6z"/><path fill="#34A853" d="M12 24c3.2 0 6-1.1 7.9-2.9l-3.7-2.9c-1 .7-2.4 1.2-4.2 1.2-3.2 0-6-2.2-6.9-5.2L1.3 17.1C3.3 21.2 7.3 24 12 24z"/><path fill="#FBBC05" d="M5.1 14.2c-.3-.7-.4-1.4-.4-2.2s.1-1.5.4-2.2L1.3 6.9C.5 8.5 0 10.2 0 12s.5 3.5 1.3 5.1l3.8-2.9z"/><path fill="#EA4335" d="M12 4.6c2.3 0 3.8 1 4.7 1.8l3.3-3.2C18 1.2 15.2 0 12 0 7.3 0 3.3 2.8 1.3 6.9l3.8 2.9c.9-3 3.7-5.2 6.9-5.2z"/></svg><span class="trev__score">5,0 <i>★</i></span></header>
+      <p class="trev__quote">« Gâteau d'anniversaire au chocolat commandé la veille pour le lendemain : excellent, nous nous sommes tous régalés ! »</p>
+      <footer><b>EF</b><div><strong>Estelle Freulon</strong><span>Commandé la veille · il y a 2 ans</span></div></footer>
+    </article>
+    <article class="trev__card" data-reveal>
+      <header><svg class="trev__g" viewBox="0 0 24 24" width="20" height="20" aria-label="Google"><path fill="#4285F4" d="M23.5 12.3c0-.9-.1-1.5-.3-2.2H12v4.1h6.5c-.1 1.1-.8 2.7-2.4 3.8l3.7 2.9c2.2-2.1 3.7-5.1 3.7-8.6z"/><path fill="#34A853" d="M12 24c3.2 0 6-1.1 7.9-2.9l-3.7-2.9c-1 .7-2.4 1.2-4.2 1.2-3.2 0-6-2.2-6.9-5.2L1.3 17.1C3.3 21.2 7.3 24 12 24z"/><path fill="#FBBC05" d="M5.1 14.2c-.3-.7-.4-1.4-.4-2.2s.1-1.5.4-2.2L1.3 6.9C.5 8.5 0 10.2 0 12s.5 3.5 1.3 5.1l3.8-2.9z"/><path fill="#EA4335" d="M12 4.6c2.3 0 3.8 1 4.7 1.8l3.3-3.2C18 1.2 15.2 0 12 0 7.3 0 3.3 2.8 1.3 6.9l3.8 2.9c.9-3 3.7-5.2 6.9-5.2z"/></svg><span class="trev__score">5,0 <i>★</i></span></header>
+      <p class="trev__quote">« Un accueil des plus chaleureux par le pâtissier, qui a réalisé un gâteau magnifique et succulent malgré un thème très précis. »</p>
+      <footer><b>WM</b><div><strong>William Mouret</strong><span>Thème sur mesure · il y a 1 an</span></div></footer>
+    </article>
+  </div>
+  <div class="trev__more" data-reveal><a class="btn btn--light" href="https://share.google/u4BPhog5sqUFzvgVQ" target="_blank" rel="noopener" data-cursor="Ouvrir" data-magnet>★ Voir plus d'avis Google</a></div>
+</section>
+
+<section class="addr-band">
+  <p class="eyebrow" data-reveal>Venez la goûter</p>
+  <a class="addr-band__line" href="https://www.google.com/maps/place/La+P%C3%A2tisserie+Des+Douceurs/@45.7500017,3.1126129,17z/data=!3m1!4b1!4m6!3m5!1s0x47f71c6318a7c699:0xd2ce1351e3a34133!8m2!3d45.7500017!4d3.1126129!16s%2Fg%2F11g0hn_td8" target="_blank" rel="noopener" data-letters data-cursor="Itinéraire">7 rue des Ramacles</a>
+  <a class="addr-band__line addr-band__line--small" href="https://www.google.com/maps/place/La+P%C3%A2tisserie+Des+Douceurs/@45.7500017,3.1126129,17z/data=!3m1!4b1!4m6!3m5!1s0x47f71c6318a7c699:0xd2ce1351e3a34133!8m2!3d45.7500017!4d3.1126129!16s%2Fg%2F11g0hn_td8" target="_blank" rel="noopener" data-letters>63170 Aubière</a>
+  <div class="cta-band__actions" data-reveal><a class="btn btn--light" href="contact.html" data-magnet>Horaires &amp; accès</a><a class="btn btn--ghost" href="tel:+33668932419" data-magnet>06 68 93 24 19</a></div>
+</section>
+</main><footer class="footer footer--page">
+  <div class="footer__cols">
+    <div><b>La Pâtisserie Des Douceurs</b><br>7 rue des Ramacles<br>63170 Aubière</div>
+    <div>Mar – Ven · 9 h – 12 h 30 &amp; 15 h – 18 h 30<br>Sam · 9 h – 13 h 30 · Dim · 9 h – 12 h 30<br>Fermé le lundi</div>
+    <div><a href="tel:+33668932419">06 68 93 24 19</a><br><a href="mailto:yohann.girard63@gmail.com">yohann.girard63@gmail.com</a><br><a href="https://www.instagram.com/lapatisseriedesdouceurs/" target="_blank" rel="noopener">Instagram</a> · <a href="https://www.facebook.com/p/La-p%C3%A2tisserie-des-douceurs-100042399776991/" target="_blank" rel="noopener">Facebook</a></div>
+    <div><a href="index.html">Accueil</a><br><a href="carte.html">La carte</a><br><a href="mariages.html">Mariages &amp; événements</a><br><a href="saisons.html">Saisons</a><br><a href="a-propos.html">La maison</a><br><a href="contact.html">Contact</a></div>
+  </div>
+  <div class="footer__row">
+    <span>© 2026 La Pâtisserie Des Douceurs · Yohann Girard, entrepreneur individuel · SIRET 833 167 109 00010</span>
+    <span><a href="mentions-legales.html">Mentions légales · CGV · Confidentialité</a></span>
+  </div>
+</footer>
+
+<script src="vendor/gsap.min.js"></script>
+<script src="vendor/ScrollTrigger.min.js"></script>
+<script src="vendor/lenis.min.js"></script>
+<script src="main.js"></script>
+
+</body>
+</html>

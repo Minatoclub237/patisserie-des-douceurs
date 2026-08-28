@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mariages, anniversaires & pièces montées — La Pâtisserie Des Douceurs</title>
+<meta name="description" content="Pièces montées de mariage, gâteaux d’anniversaire et desserts d’événement sur commande à Aubière. Simulateur de devis en ligne.">
+<meta property="og:title" content="Mariages, anniversaires & pièces montées — La Pâtisserie Des Douceurs">
+<meta property="og:description" content="Pièces montées de mariage, gâteaux d’anniversaire et desserts d’événement sur commande à Aubière. Simulateur de devis en ligne.">
+<meta property="og:image" content="img/hero.webp">
+<meta property="og:locale" content="fr_FR">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23120A0D'/%3E%3Ccircle cx='16' cy='17' r='8' fill='%23E48C9D'/%3E%3Ccircle cx='13' cy='13' r='2.2' fill='%23C4364F'/%3E%3Ccircle cx='19' cy='13' r='2.2' fill='%23C4364F'/%3E%3Ccircle cx='16' cy='10' r='2.2' fill='%23C4364F'/%3E%3C/svg%3E">
+<link rel="preload" href="fonts/urbanist-latin-800-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/inter-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="vendor/lenis.css">
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="pages.css">
+</head>
+<body class="sub p-mariages">
+
+<div class="grain" aria-hidden="true"></div>
+<div class="cursor" aria-hidden="true"><span class="cursor__dot"></span><span class="cursor__ring"><span class="cursor__label"></span></span></div>
+<header class="nav" id="nav">
+  <button class="nav__burger" id="burger" aria-label="Menu"><i></i><i></i></button>
+  <a class="nav__logo" href="index.html">
+    <span class="nav__logo-crown">♛</span>
+    <span class="nav__logo-word">Douceurs</span>
+    <span class="nav__logo-sub">Pâtisserie · Aubière</span>
+  </a>
+  <nav class="nav__links"><a href="carte.html">La carte</a><a href="mariages.html" aria-current=page>Mariages</a><a href="saisons.html">Saisons</a><a href="a-propos.html">La maison</a><a href="contact.html">Contact</a></nav>
+  <a class="btn btn--pill" href="tel:+33668932419" data-cursor="Appeler" data-magnet>06 68 93 24 19</a>
+</header>
+<div class="menu" id="menu">
+  <a href="index.html">Accueil</a><a href="carte.html">La carte</a><a href="mariages.html" aria-current=page>Mariages</a><a href="saisons.html">Saisons</a><a href="a-propos.html">La maison</a><a href="contact.html">Contact</a>
+</div>
+<main id="top">
+<section class="mhero">
+  <div class="mhero__pin">
+    <video class="mhero__video" autoplay muted loop playsinline poster="img/mariages-hero.webp" data-hero-img data-src-hd="video/mariages-hero.mp4" data-src-sd="video/mariages-hero-720.mp4"></video>
+    <div class="mhero__veil"></div>
+    <div class="mhero__slide" data-mslide>
+      <p class="eyebrow" data-letters>Sur commande</p>
+      <h1 class="mhero__h"><span data-letters>Le gâteau</span><span data-letters>du jour J</span></h1>
+      <p class="mhero__p">Pièces montées pour mariages et célébrations, gâteaux d'anniversaire, desserts d'événement — conçus avec vous, livrés sur place.</p>
+      <div class="mhero__cta"><a class="btn btn--light" href="#simulateur" data-magnet data-cursor="Estimer">Estimer ma commande</a></div>
+    </div>
+    <div class="mhero__slide" data-mslide><span class="mhero__num" aria-hidden="true">01</span><h2 class="mhero__h"><span data-letters>On en</span><span data-letters>parle</span></h2><p class="mhero__p">Nombre de parts, date, lieu, envies. Par téléphone, par e-mail, ou avec le simulateur juste en dessous.</p></div>
+    <div class="mhero__slide" data-mslide><span class="mhero__num" aria-hidden="true">02</span><h2 class="mhero__h"><span data-letters>Yohann</span><span data-letters>conçoit</span></h2><p class="mhero__p">Parfums, étages, décor. Un devis précis sous 48 h, une dégustation possible pour les mariages.</p></div>
+    <div class="mhero__slide" data-mslide><span class="mhero__num" aria-hidden="true">03</span><h2 class="mhero__h"><span data-letters>Livré</span><span data-letters>le jour J</span></h2><p class="mhero__p">Montage et livraison sur place à Aubière, Clermont-Ferrand et alentours. Vous n'avez rien à porter.</p></div>
+    <div class="mhero__bar"><i id="mBar"></i></div>
+  </div>
+</section>
+
+<section class="stackcards">
+  <header class="stackcards__head"><p class="eyebrow" data-reveal>Réalisations</p><h2 class="h2" data-letters>Elles sont passées par l’atelier</h2></header>
+  <div class="stackcards__list">
+    <article class="scard" style="--i:0">
+      <img src="img/scard-1.webp" alt="" loading="lazy">
+      <div class="scard__body"><span class="scard__n">01</span><h3>Gâteau personnalisé « Lya, 1 an »</h3><p>Commande sur mesure · tortue en pâte à sucre · premier anniversaire</p></div>
+    </article>
+    <article class="scard" style="--i:1">
+      <img src="img/scard-2.webp" alt="" loading="lazy">
+      <div class="scard__body"><span class="scard__n">02</span><h3>Le Merveilleux</h3><p>Pâtisserie d’antan · meringue, chantilly, copeaux de chocolat noir</p></div>
+    </article>
+    <article class="scard" style="--i:2">
+      <img src="img/scard-3.webp" alt="" loading="lazy">
+      <div class="scard__body"><span class="scard__n">03</span><h3>Wedding cake « Laëtitia & Julien »</h3><p>Trois étages · roses en sucre · plaque dédicacée au cornet</p></div>
+    </article>
+    <article class="scard" style="--i:3">
+      <img src="img/scard-4.webp" alt="" loading="lazy">
+      <div class="scard__body"><span class="scard__n">04</span><h3>Pièce montée nougatine & amande</h3><p>Choux vanille, praliné, chocolat · montage carré, décor nougatine</p></div>
+    </article></div>
+</section>
+
+<section class="simu" id="simulateur">
+  <div class="simu__intro">
+    <p class="eyebrow" data-reveal>Simulateur</p>
+    <h2 class="h2" data-letters>Estimez votre commande</h2>
+    <p class="simu__lead" data-reveal>Une fourchette indicative en 30 secondes. Le devis définitif est établi par Yohann après échange — il ne remplace pas la conversation, il la prépare.</p>
+  </div>
+  <form class="simu__form" id="simu" data-reveal>
+    <fieldset>
+      <legend>Type de pièce</legend>
+      <div class="simu__choices">
+        <label><input type="radio" name="type" value="choux" checked><span><b>Pièce montée en choux</b><small>Croquembouche, nougatine, caramel</small></span></label>
+        <label><input type="radio" name="type" value="wedding"><span><b>Wedding cake</b><small>Entremets à étages, décor sur mesure</small></span></label>
+        <label><input type="radio" name="type" value="anniv"><span><b>Gâteau d’anniversaire</b><small>Entremets personnalisé, sous 24 h possible</small></span></label>
+        <label><input type="radio" name="type" value="buffet"><span><b>Buffet de desserts</b><small>Assortiment de pièces individuelles</small></span></label>
+      </div>
+    </fieldset>
+    <fieldset>
+      <legend>Nombre de parts <output id="partsOut">60</output></legend>
+      <input type="range" name="parts" id="parts" min="6" max="250" step="2" value="60">
+      <div class="simu__scale"><span>6</span><span>60</span><span>120</span><span>250</span></div>
+    </fieldset>
+    <fieldset>
+      <legend>Parfums <small>(deux au maximum)</small></legend>
+      <div class="simu__tags" id="parfums">
+        <label><input type="checkbox" value="Vanille"><span>Vanille</span></label>
+        <label><input type="checkbox" value="Chocolat"><span>Chocolat</span></label>
+        <label><input type="checkbox" value="Framboise"><span>Framboise</span></label>
+        <label><input type="checkbox" value="Praliné"><span>Praliné</span></label>
+        <label><input type="checkbox" value="Citron"><span>Citron</span></label>
+        <label><input type="checkbox" value="Caramel"><span>Caramel</span></label>
+        <label><input type="checkbox" value="Pistache"><span>Pistache</span></label>
+        <label><input type="checkbox" value="Fruits de saison"><span>Fruits de saison</span></label>
+      </div>
+    </fieldset>
+    <fieldset>
+      <legend>Options</legend>
+      <div class="simu__tags">
+        <label><input type="checkbox" name="opt" value="Décor floral" data-price="60"><span>Décor floral</span></label>
+        <label><input type="checkbox" name="opt" value="Nougatine sculptée" data-price="40"><span>Nougatine sculptée</span></label>
+        <label><input type="checkbox" name="opt" value="Personnalisation (prénoms, texte)" data-price="20"><span>Personnalisation</span></label>
+        <label><input type="checkbox" name="opt" value="Présentoir prêté" data-price="0"><span>Présentoir prêté</span></label>
+        <label><input type="checkbox" name="opt" value="Livraison et montage sur place" data-price="35"><span>Livraison &amp; montage</span></label>
+      </div>
+    </fieldset>
+    <fieldset class="simu__when">
+      <legend>Quand et où</legend>
+      <input type="date" name="date" id="simuDate" aria-label="Date de l’événement" required>
+      <input type="text" name="lieu" placeholder="Lieu (ville ou salle)">
+    </fieldset>
+    <aside class="simu__result" data-3d>
+      <p class="eyebrow">Estimation indicative</p>
+      <p class="simu__price"><span id="priceLow">—</span> <i>à</i> <span id="priceHigh">—</span></p>
+      <p class="simu__detail" id="priceDetail"></p>
+      <p class="simu__note">Fourchette calculée à partir de tarifs indicatifs, hors dégustation. Le devis définitif dépend du décor et de la date.</p>
+      <div class="simu__send">
+        <input type="text" name="nom" placeholder="Votre nom" required>
+        <input type="tel" name="tel" placeholder="Votre téléphone" required>
+        <button class="btn btn--light" type="submit" data-cursor="Envoyer" data-magnet>Envoyer la demande de devis</button>
+      </div>
+      <p class="boutique__ok">Votre demande s’ouvre dans votre messagerie — il ne reste qu’à l’envoyer.</p>
+    </aside>
+  </form>
+</section>
+
+<section class="faq">
+  <p class="eyebrow" data-reveal>Questions fréquentes</p>
+  <h2 class="h2" data-letters>Avant de commander</h2>
+  <div class="faq__list">
+    <details data-reveal><summary>Combien de temps à l’avance ?</summary><p>Un gâteau d’anniversaire peut se faire sous 24 h selon le planning. Pour une pièce montée de mariage, comptez 3 à 4 semaines, davantage en juin et septembre.</p></details>
+    <details data-reveal><summary>Peut-on goûter avant ?</summary><p>Oui, pour les mariages : une dégustation des parfums est proposée lors du rendez-vous de commande.</p></details>
+    <details data-reveal><summary>Livrez-vous ?</summary><p>Oui, à Aubière, Clermont-Ferrand et alentours. Le montage est fait sur place pour les pièces montées. Livraison le jour même possible.</p></details>
+    <details data-reveal><summary>Comment régler ?</summary><p>Un acompte à la commande, le solde à la livraison ou au retrait. Carte bancaire, sans contact et espèces acceptés en boutique.</p></details>
+    <details data-reveal><summary>Allergies, sans gluten ?</summary><p>Parlez-en à la commande : certaines recettes peuvent être adaptées. L’atelier travaille fruits à coque, gluten, lait et œufs.</p></details>
+  </div>
+</section>
+</main><footer class="footer footer--page">
+  <div class="footer__cols">
+    <div><b>La Pâtisserie Des Douceurs</b><br>7 rue des Ramacles<br>63170 Aubière</div>
+    <div>Mar – Ven · 9 h – 12 h 30 &amp; 15 h – 18 h 30<br>Sam · 9 h – 13 h 30 · Dim · 9 h – 12 h 30<br>Fermé le lundi</div>
+    <div><a href="tel:+33668932419">06 68 93 24 19</a><br><a href="mailto:yohann.girard63@gmail.com">yohann.girard63@gmail.com</a><br><a href="https://www.instagram.com/lapatisseriedesdouceurs/" target="_blank" rel="noopener">Instagram</a> · <a href="https://www.facebook.com/p/La-p%C3%A2tisserie-des-douceurs-100042399776991/" target="_blank" rel="noopener">Facebook</a></div>
+    <div><a href="index.html">Accueil</a><br><a href="carte.html">La carte</a><br><a href="mariages.html">Mariages &amp; événements</a><br><a href="saisons.html">Saisons</a><br><a href="a-propos.html">La maison</a><br><a href="contact.html">Contact</a></div>
+  </div>
+  <div class="footer__row">
+    <span>© 2026 La Pâtisserie Des Douceurs · Yohann Girard, entrepreneur individuel · SIRET 833 167 109 00010</span>
+    <span><a href="mentions-legales.html">Mentions légales · CGV · Confidentialité</a></span>
+  </div>
+</footer>
+
+<script src="vendor/gsap.min.js"></script>
+<script src="vendor/ScrollTrigger.min.js"></script>
+<script src="vendor/lenis.min.js"></script>
+<script src="main.js"></script>
+<script src="simulateur.js"></script>
+</body>
+</html>

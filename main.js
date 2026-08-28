@@ -207,7 +207,7 @@
   const scards = gsap.utils.toArray('.scard');
   scards.forEach((c, i) => {
     const next = scards[i + 1];
-    if (next) gsap.to(c, { scale: .92 - (scards.length - i - 1) * .02, filter: 'brightness(.55)', ease: 'none', scrollTrigger: { trigger: next, start: 'top 90%', end: 'top 30%', scrub: true } });
+    if (next) gsap.to(c, { scale: .965, ease: 'none', scrollTrigger: { trigger: next, start: 'top 70%', end: 'top 20%', scrub: true } }); // pas d'assombrissement : les cartes restent pleines couleurs
   });
 
   /* ---------- 6b4. Maison : journée à l'atelier, horloge pinnée ---------- */

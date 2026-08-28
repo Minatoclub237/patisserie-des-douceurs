@@ -42,10 +42,8 @@ def nav(current):
     links = ''.join(f'<a href="{h}"{" aria-current=page" if h == current else ""}>{l}</a>' for h, l in NAV_LINKS)
     return f'''<header class="nav" id="nav">
   <button class="nav__burger" id="burger" aria-label="Menu"><i></i><i></i></button>
-  <a class="nav__logo" href="index.html">
-    <span class="nav__logo-crown">♛</span>
-    <span class="nav__logo-word">Douceurs</span>
-    <span class="nav__logo-sub">Pâtisserie · Aubière</span>
+  <a class="nav__logo" href="index.html" aria-label="Pâtisserie des Douceurs">
+    <img class="nav__logo-img" src="img/logo.webp" alt="Pâtisserie des Douceurs">
   </a>
   <nav class="nav__links">{links}</nav>
   <a class="btn btn--pill" href="{TEL}" data-cursor="Appeler" data-magnet>06 68 93 24 19</a>
@@ -56,6 +54,7 @@ def nav(current):
 '''
 
 FOOTER = f'''<footer class="footer footer--page">
+  <img class="footer__logo" src="img/logo.webp" alt="Pâtisserie des Douceurs">
   <div class="footer__cols">
     <div><b>La Pâtisserie Des Douceurs</b><br>7 rue des Ramacles<br>63170 Aubière</div>
     <div>Mar – Ven · 9 h – 12 h 30 &amp; 15 h – 18 h 30<br>Sam · 9 h – 13 h 30 · Dim · 9 h – 12 h 30<br>Fermé le lundi</div>

@@ -98,7 +98,8 @@
     }
     const count = { v: 0 }, el = document.getElementById('loadCount');
     const tl = gsap.timeline({ onComplete: () => { buildHeroScroll(); heroSentences(); } });
-    tl.to('.loader__mark .ch', { y: '0%', duration: 1, stagger: .035, ease: 'power4.out' }, 0)
+    tl.from('.loader__logo', { scale: .82, opacity: 0, duration: .9, ease: 'expo.out' }, 0)
+      .to('.loader__mark .ch', { y: '0%', duration: 1, stagger: .035, ease: 'power4.out' }, 0)
       .to(count, { v: 100, duration: 1.6, ease: 'power2.inOut', onUpdate: () => (el.textContent = String(Math.round(count.v)).padStart(2, '0')) }, 0)
       .to('.loader__mark .ch', { y: '-110%', duration: .7, stagger: .02, ease: 'power3.in' }, 1.4)
       .to('.loader__sub, .loader__count', { opacity: 0, duration: .4 }, 1.6)
@@ -169,14 +170,6 @@
     document.querySelectorAll('[data-cursor]').forEach((el) => {
       el.addEventListener('pointerenter', () => { label.textContent = el.dataset.cursor; cur.classList.add('is-label'); });
       el.addEventListener('pointerleave', () => cur.classList.remove('is-label'));
-    });
-    document.querySelectorAll('[data-magnet]').forEach((el) => {
-      const mx = gsap.quickTo(el, 'x', { duration: .5, ease: 'power3' }), my = gsap.quickTo(el, 'y', { duration: .5, ease: 'power3' });
-      el.addEventListener('pointermove', (e) => {
-        const r = el.getBoundingClientRect();
-        mx((e.clientX - r.left - r.width / 2) * .35); my((e.clientY - r.top - r.height / 2) * .35);
-      });
-      el.addEventListener('pointerleave', () => { mx(0); my(0); });
     });
   }
 

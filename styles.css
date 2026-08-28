@@ -304,6 +304,7 @@ body.menu-open .nav__burger i:last-child{top:15px;transform:rotate(-45deg)}
   .mani__badge{width:110px;height:110px}
 }
 @media (max-width:760px){
+  .nav__logo-img{height:60px}
   .hero-wrap{height:170svh}
   .hero__text{bottom:48px}
   .hero__title{font-size:clamp(42px,12vw,76px)}
@@ -311,7 +312,9 @@ body.menu-open .nav__burger i:last-child{top:15px;transform:rotate(-45deg)}
   .hero__meta{display:none}
   .hero__scroll{display:none}
   .hero__veil{background:linear-gradient(0deg,rgba(18,10,13,.8) 0%,rgba(18,10,13,.35) 55%,rgba(18,10,13,0) 80%)}
-  .mani__lines{font-size:12.5vw}
+  .mani__lines{font-size:7.9vw;padding:0 10px}
+  .mani__line{gap:.18em;justify-content:center}
+  .mani__line--right{justify-content:center}
   /* vitrine : défilement natif horizontal sur mobile */
   .vitrine__pin{height:auto;min-height:0;padding:100px 0;perspective:none}
   .vitrine__track{width:auto;overflow-x:auto;scroll-snap-type:x mandatory;padding:20px var(--pad) 30px;-webkit-overflow-scrolling:touch}

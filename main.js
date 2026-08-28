@@ -343,7 +343,7 @@
 
   /* ---------- 8. Manifeste : lignes en contre-sens + images qui s'ouvrent ---------- */
   document.querySelectorAll('.mani__line').forEach((line) => {
-    const s = parseFloat(line.dataset.shift) * (window.innerWidth <= 760 ? 7 : 14);
+    const s = parseFloat(line.dataset.shift) * (window.innerWidth <= 760 ? 3 : 14);
     gsap.fromTo(line, { xPercent: s }, { xPercent: -s, ease: 'none', scrollTrigger: { trigger: '.mani__lines', start: 'top bottom', end: 'bottom top', scrub: true } });
     gsap.to(line.querySelectorAll('.mani__inline'), { scaleX: 1, ease: 'power2.out', scrollTrigger: { trigger: line, start: 'top 80%', end: 'top 35%', scrub: .5 } });
   });

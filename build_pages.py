@@ -11,7 +11,7 @@ FB = 'https://www.facebook.com/p/La-p%C3%A2tisserie-des-douceurs-100042399776991
 TEL = 'tel:+33668932419'
 MAIL = 'yohann.girard63@gmail.com'
 
-NAV_LINKS = [('carte.html', 'La carte'), ('mariages.html', 'Mariages'), ('saisons.html', 'Saisons'), ('a-propos.html', 'La maison'), ('contact.html', 'Contact')]
+NAV_LINKS = [('index.html', 'Accueil'), ('carte.html', 'La carte'), ('mariages.html', 'Mariages'), ('saisons.html', 'Saisons'), ('a-propos.html', 'La maison'), ('contact.html', 'Contact')]
 
 def head(title, desc, body_class=''):
     return f'''<!doctype html>
@@ -49,7 +49,7 @@ def nav(current):
   <a class="btn btn--pill" href="{TEL}" data-cursor="Appeler" data-magnet>06 68 93 24 19</a>
 </header>
 <div class="menu" id="menu">
-  <a href="index.html">Accueil</a>{links}
+  {links}
 </div>
 '''
 
@@ -523,7 +523,7 @@ for f, fn in PAGES.items():
 p = 'index.html'; s = open(p, encoding='utf-8').read()
 links = ''.join(f'<a href="{h}">{l}</a>' for h, l in NAV_LINKS)
 s = re.sub(r'<nav class="nav__links">.*?</nav>', f'<nav class="nav__links">{links}</nav>', s, flags=re.S)
-s = re.sub(r'<div class="menu" id="menu">.*?</div>', f'<div class="menu" id="menu">\n  <a href="#produits">Vitrine</a>{links}\n</div>', s, flags=re.S)
+s = re.sub(r'<div class="menu" id="menu">.*?</div>', f'<div class="menu" id="menu">\n  {links}\n</div>', s, flags=re.S)
 s = s.replace('<a class="btn btn--ghost" href="tel:+33668932419" data-magnet>Commander</a>', '<a class="btn btn--ghost" href="mariages.html" data-magnet>Commander un gâteau</a>')
 open(p, 'w', encoding='utf-8').write(s)
 print('index.html mis a jour')
